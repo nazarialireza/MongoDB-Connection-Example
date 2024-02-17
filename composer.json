@@ -1,0 +1,24 @@
+{
+    "name": "nazarialireza/mongodb-connection-example",
+    "type": "project",
+    "description": "Simple MongoDB Connection Example to check your connection, you can use this example to check your database connection on localhost or server for testing your access .",
+    "keywords": ["SDKAPP", "Kikstart", "AfTel", "Salaam"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alireza Nazari",
+            "email": "alireza.ginbox@gmail.com"
+        }
+    ],
+    "funding": [
+        {
+            "type": "patreon",
+            "url": "https://www.patreon.com/alireza_nazari"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.17",
+        "larapack/dd": "^1.1",
+        "fakerphp/faker": "^1.23"
+    }
+}
