@@ -8,14 +8,14 @@
 */
 
 require './vendor/autoload.php';
-
+dump("MongoDB connection ". (extension_loaded("mongodb") ? "loaded\n" : "not loaded\n") );
 // connect to mongodb you can replace the root user and toor password with your credential
 $m = new MongoDB\Client('mongodb://root:toor@127.0.0.1:27017', [
     'directConnection' => true,
     'serverSelectionTimeoutMS' => 2000
 ]);
 if ($m) dump("Connection to database successfully");
-
+else dump("Can not make Connection to database");
 // select a database Demo (you need create required database before using it in here )
 $db = $m->Demo;
 if ($db) dump( "Database Demo selected");
